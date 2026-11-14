@@ -26,6 +26,7 @@ func TestExecutorsRejectMissingKindPayload(t *testing.T) {
 		{name: "HTTPProbe", kind: results.KindHTTPProbe, executor: HTTPExecutor{}},
 		{name: "DNSProbe", kind: results.KindDNSProbe, executor: DNSExecutor{}},
 		{name: "TCPProbe", kind: results.KindTCPProbe, executor: TCPExecutor{}},
+		{name: "SMTPProbe", kind: results.KindSMTPProbe, executor: SMTPExecutor{}},
 	}
 
 	for _, test := range tests {
